@@ -30,7 +30,7 @@ Considering the time and resource limitation, in this implementation, I used
 
 The structure used in this simple implementation is depicted as follows:
 
-![CNN_structure](https://github.com/ML1998/DeepLearningExamples/blob/main/CatVsDogs/CNNstruct.png)
+<img src="https://github.com/ML1998/DeepLearningExamples/blob/main/CatVsDogs/CNNstruct.png" width = "400" height = "500" alt="" align=center />
 
 ## Implementation: 
 
