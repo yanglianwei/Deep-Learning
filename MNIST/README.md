@@ -20,7 +20,11 @@ The structure used in this simple implementation is depicted as follows:
 
 ## Implementation: CNN for MNIST classifying
 
-### Prepare MNIST data
+### 1. Tensorflow Implementation
+
+see [mnist_cnn.ipynb](https://github.com/MingyuL98/Deep-Learning/blob/main/MNIST/mnist_cnn.ipynb)
+
+#### 1.1 Prepare MNIST data
 
 * Data preprocessing
 
@@ -39,7 +43,7 @@ The structure used in this simple implementation is depicted as follows:
       train_data = tf.data.Dataset.from_tensor_slices((img_train, label_train))
       train_data = train_data.repeat().shuffle(5000).batch(batch_size).prefetch(1)
 
-### Construct CNN
+#### 1.2 Construct CNN
         
 * CNN Structure
     * Conv Layer 1: 5x5 conv, 1 input, 32 filters (MNIST has 1 color channel only).
@@ -60,7 +64,7 @@ The structure used in this simple implementation is depicted as follows:
       def maxpool_2d(x, k=2):
           return tf.nn.max_pool(x, ksize=[1, k, k, 1], strides=[1, k, k, 1], padding='SAME')
     
-### Model Training
+#### 1.3 Model Training
 
 * Compute cross-entropy loss
           
@@ -74,3 +78,7 @@ The structure used in this simple implementation is depicted as follows:
       trainable_variables = list(weights.values()) + list(biases.values())
       gradients = g.gradient(loss, trainable_variables)
       optimizer.apply_gradients(zip(gradients, trainable_variables))
+
+### 2. Pytorch Implementation
+
+see [mnist_cnn_torch.ipynb](https://github.com/MingyuL98/Deep-Learning/blob/main/MNIST/mnist_cnn_torch.ipynb)
