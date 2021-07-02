@@ -12,6 +12,6 @@ The database has been preprocessed and contains 4 parts:
 
 ## Text-CNN
 
-Similar to traditional CNNs, Text-CNN contains an embedding layer, convolution layers,  pooling layers and fully-connected layers. Refer to the original paper for details
+Similar to traditional CNNs, Text-CNN contains an embedding layer, convolution layers,  pooling layers and fully-connected layers. Refer to the original paper for details:
 
-[Convolutional Neural Networks for Sentence Classification](https://arxiv.org/pdf/1408.5882.pdf)
+* Y. Kim, “[Convolutional Neural Networks for Sentence Classification by ](https://arxiv.org/pdf/1408.5882.pdf),” Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP), 2014. 
