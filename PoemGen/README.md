@@ -15,7 +15,7 @@ The database is saved in `npz` format and composed of parts:
 
 The structure is a general LSTM model, check this blog for more details:
 
-![Understanding-LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+[Understanding-LSTMs from colah's blog](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 
 ### 1. Construct word embeddings
 
